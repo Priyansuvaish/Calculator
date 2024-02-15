@@ -9,10 +9,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source> <!-- Updated to 1.8 as 21 is not a standard version as of my last update -->
+        <maven.compiler.target>1.8</maven.compiler.target> <!-- Updated to 1.8 as well -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.yaml</groupId>
@@ -27,7 +28,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>RELEASE</version>
+            <version>7.4.0</version> <!-- Specific version instead of RELEASE -->
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -37,5 +38,4 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
