@@ -45,7 +45,6 @@ pipeline {
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             }
         }
-    }
 
     stage('Build Docker Image') {
             steps {
@@ -77,6 +76,7 @@ pipeline {
                 }
             }
         }
+    }
 
     post {
         // Define actions to take in case of build failure or success
